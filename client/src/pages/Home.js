@@ -20,13 +20,13 @@ const Home = () => {
         </section>
         <div className="home-tagline">
           <h2>
-            Find your carbon <span>footprint</span>.
+            Track Actions, <span>Build Habits!</span>.
           </h2>
         </div>
         {Auth.loggedIn() ? (
           <section className="login-btn">
             <Link to="/calculator">
-              <button type="submit">Calculate Your Footprint!</button>
+              <button type="submit">Know Your Footprint!</button>
             </Link>
           </section>
         ) : (
@@ -43,7 +43,7 @@ const Home = () => {
               Your carbon footprint is a measurement of your contribution to
               carbon emissions and climate change. Our everyday activities
               produce carbon dioxide and methane through direct causes, like
-              driving a gas-powered car, or indirect causes, like using
+              driving a car, or indirect causes, like using
               electricity in your home. Everyone’s carbon emissions add up and
               cause global climate change.
             </p>
