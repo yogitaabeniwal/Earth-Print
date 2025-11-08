@@ -55,7 +55,7 @@ const Login = () => {
           />
           <input
             className="login-input"
-            placeholder="******"
+            placeholder="Your password"
             name="password"
             type="password"
             id="password"
@@ -63,7 +63,7 @@ const Login = () => {
             onChange={handleChange}
           />
           <button type="submit">Submit</button>
-          {error && <p>Login failed</p>}
+          {error && <p>Login failed!!</p>}
         </form>
         <p>
           Don't have an account?{' '}
