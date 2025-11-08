@@ -1,0 +1,27 @@
+{
+  "name": "carbon-footprint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently --raw \"npm run watch --prefix server\" \"npm start --prefix client\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.23.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^5.3.0",
+    "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.5.6",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^4.1.12"
+  }
+}
