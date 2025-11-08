@@ -23,7 +23,7 @@ export const data = {
   labels: [
     'United States',
     'China',
-    'Germany',
+    'India',
     'Japan',
     'Russia',
     'Continent of Africa',
