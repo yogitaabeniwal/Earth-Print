@@ -1,137 +1,131 @@
-🌍 EarthPrint — Track Actions, Build Habits
-🪴 Description
+# Earth Print - Carbon Footprint Tracker
 
-EarthPrint is a web application built for environmentally conscious individuals who want to calculate, understand, and reduce their carbon footprint through actionable habits and pledges.
+Earth Print is a web application that helps you understand and reduce your carbon footprint through personalized insights and actionable pledges.
 
-The app allows users to:
+## 🌱 About
 
-Calculate their carbon footprint based on daily lifestyle factors such as travel, energy use, food habits, and more.
+Earth Print calculates your personal carbon footprint based on your lifestyle choices and provides AI-generated, personalized recommendations to help you reduce your environmental impact.
 
-Track and visualize their impact through interactive graphs.
+## ✨ Features
 
-Take pledges to adopt greener habits and monitor their progress over time.
+- **Carbon Calculator** - Estimate your carbon emissions from energy usage, transportation, and diet
+- **Visual Dashboard** - See your footprint broken down into easy-to-understand charts
+- **Personalized Pledges** - Get AI-generated sustainability goals tailored to your lifestyle
+- **Progress Tracking** - Monitor your reduction efforts and see your impact over time
 
-Learn ways to offset their emissions with simple, realistic actions.
+## 🚀 Quick Start
 
-The goal of EarthPrint is to help users turn awareness into action — one footprint at a time.
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB
+- npm or yarn
 
-📋 Features
+### Installation
 
-User Authentication — Signup, Login, and Logout using GraphQL and JWT.
+1. **Clone the repository**
+```bash
+git clone https://github.com/yogitaabeniwal/carbon-footprint.git
+cd carbon-footprint
+```
 
-Carbon Footprint Calculator — Personalized emission estimation based on user inputs.
-
-My Results Dashboard — View detailed category-wise footprint and graphical representation.
-
-Pledges Section — Commit to eco-friendly actions and see how they lower your total footprint.
-
-Responsive Design — Built with React and styled for all screen sizes.
-
-🧭 Table of Contents
-
-Installation
-
-Usage
-
-Technologies
-
-Future Scope
-
-Contributors
-
-How to Contribute
-
-⚙️ Installation
-
-Clone the repository:
-
-git clone https://github.com/yogitaabeniwal/EarthPrint--Track-Actions-Build-Habits.git
-
-
-Navigate to the project folder:
-
-cd EarthPrint--Track-Actions-Build-Habits
-
-
-Install dependencies:
-
+2. **Install dependencies**
+```bash
+# Install server dependencies
 npm install
 
+# Install client dependencies
+cd client
+npm install
+cd ..
+```
 
-Start the app in development mode (runs both client and server):
+3. **Set up environment variables**
+Create a `.env` file in the root directory:
+```env
+MONGODB_URI=mongodb://localhost:27017/carbonfootprint
+JWT_SECRET=your_jwt_secret_here
+NODE_ENV=development
+```
 
+4. **Start the application**
+```bash
+# Run both frontend and backend
 npm run develop
 
+# Or run separately:
+# Backend only
+npm run server
 
-React App → http://localhost:3000
+# Frontend only (from client directory)
+npm run client
+```
 
-GraphQL Playground → http://localhost:3001/graphql
+5. **Open your browser**
+Navigate to `http://localhost:3000`
 
-🧩 Technologies Used
+## 🛠️ Built With
 
-Frontend:
+- **Frontend**: React, CSS3
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **API**: GraphQL
+- **Authentication**: JWT, bcrypt
+- **Charts**: Chart.js
 
-React.js
+## 📁 Project Structure
 
-Apollo Client (GraphQL)
+```
+carbon-footprint/
+├── client/                 # React frontend
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── utils/
+├── server/                 # Node.js backend
+│   ├── models/
+│   ├── schemas/
+│   ├── utils/
+│   └── server.js
+└── package.json
+```
 
-React Router
+## 🎯 How It Works
 
-Chart.js
+1. **Calculate** - Enter your energy usage, travel habits, and dietary choices
+2. **Visualize** - See your carbon footprint broken down by category
+3. **Personalize** - Receive AI-generated pledges targeting your highest impact areas
+4. **Act** - Use the chatbot coach for guidance and track your progress
 
-MUI & Iconify
+## 🤝 Contributing
 
-Backend:
-
-Node.js + Express.js
-
-Apollo Server
-
-MongoDB + Mongoose
-
-JWT Authentication
-
-Bcrypt Encryption
-
-🔮 Future Scope
-
-Integration of AI-powered emission insights.
-
-User challenges and leaderboard system.
-
-Carbon offset donation integration.
-
-Monthly reports for emission trends.
-
-👩‍💻 Contributors
-Name	Email	GitHub
-Yogita Beniwal	beniwalyogita07@gmail.com
-	@yogitaabeniwal
-
-Uditi Arya	uditiarya3112@gmail.com
-	@Uditi-Arya
-
-Antra Chauhan	thakurantra2004@gmail.com
-	@Antra2004
+We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
 
-🤝 How to Contribute
+## 🙏 Acknowledgments
 
-Fork the repository.
+- Emission factors data from reputable environmental research
+- Chart.js for data visualization
+- React community for excellent documentation and support
 
-Create a new branch:
+---
 
-git checkout -b feature-name
+**Start your sustainability journey today!** Calculate your footprint and discover personalized ways to make a difference. 🌍✨
 
+## 👥 Team
 
-Make your changes and commit:
+- Uditi Arya
+- Yogita Beniwal  
+- Antra Chauhan
 
-git commit -m "Added feature-name"
+## 📞 Support
 
+If you have any questions or need help with setup, please open an issue in the GitHub repository.
 
-Push to your fork and open a Pull Request.
+---
 
+<div align="center">
+  
+**Made with ❤️ for a greener planet**
 
-
-For queries or suggestions, feel free to reach out to any of the contributors.
-Let’s make the planet greener — one click at a time 🌿
+</div>

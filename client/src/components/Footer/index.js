@@ -22,7 +22,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/yogitaabeniwal/EarthPrint--Track-Actions-Build-Habits"
+                  href="https://github.com/yogitaabeniwal/Earth-Print"
                   rel="noreferrer"
                   target="_blank"
                 >
